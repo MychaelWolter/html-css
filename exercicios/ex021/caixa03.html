@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas com imagens</title>
+    <style>
+        h1 {
+            border: 12px solid transparent;
+            padding: 10px;
+            border-image-source: url();/*linkar a borda*/
+            border-image-slice: 27;/*numeros de vezes q repete a imagem*/
+            border-image-repeat: repeat;/*style da borda, tem o repeat e o stretch*/
+            /*
+            border-image: url('') 27 repeat
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de borda com imagem</h1>
+</body>
+</html>

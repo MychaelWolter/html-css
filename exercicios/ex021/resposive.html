@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 250px;/*minimo q o conteudo vai ocupar na tela*/
+            max-width: 800px;/*maximo q o conteudo vai ocupar da tela*/
+            margin: auto;
+        }
+        
+        img {
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus aliquam quo eum iure omnis nulla ut, officiis unde in soluta asperiores quibusdam non obcaecati ipsum quas. Vel, atque? Temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam sit unde deserunt eveniet sint recusandae enim placeat neque. Nemo inventore magnam natus cumque dignissimos eveniet quod at aperiam quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, recusandae culpa dolor nihil sequi libero consequuntur deleniti illum ipsam, ea exercitationem possimus, voluptatibus animi debitis veritatis reprehenderit sit eveniet! Vitae?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="src/imagens/irina-blok-pq.jpg">
+            <img src="src/imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto doloribus aliquam quo eum iure omnis nulla ut, officiis unde in soluta asperiores quibusdam non obcaecati ipsum quas. Vel, atque? Temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam sit unde deserunt eveniet sint recusandae enim placeat neque. Nemo inventore magnam natus cumque dignissimos eveniet quod at aperiam quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, recusandae culpa dolor nihil sequi libero consequuntur deleniti illum ipsam, ea exercitationem possimus, voluptatibus animi debitis veritatis reprehenderit sit eveniet! Vitae?</p>
+    </main>
+</body>
+</html>

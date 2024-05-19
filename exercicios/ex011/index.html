@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--picture -> imagem dinamica, source -> colocar outras imagens diferentes, media -> tamanho max ou minimo da tela, srctset -> local do arquivo, type -> tipo do arquivo, tem q ser do menor pro maior-->
+
+    <h1>Reproduzindo áudio</h1> 
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls loop><!--preload(auto=carrega tudo de uma vez, metadata=carrega algumas informações, none=usuario q aperta para carregar)(controls=deixa igual spotify)(loop=repete toda hora)(autoplay=inicia sozinho assim q entra no site)-->
+        <source src="midia/somnia1-reedmathis.mp3" type="audio/mpeg">
+        <source src="midia/somnia1-reedmathis.ogg.ogg" type="audio/ogg">
+        <source src="midia/somnia1-reedmathis.wav.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/somnia1-reedmathis.mp3" download="somnia1-reedmathis.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio><!--MP3(mpeg)-WAV-OGG-->
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas em CSS</title>
+    <style>
+        h1 {/*box-level*/
+            background-color: lightgray;
+            
+            height: 40px;
+            width: 375px;
+
+            border: 5px solid darkslategray;
+
+            padding: 5px;/*ordem de relogio, comaçando pelo topo*/
+
+            outline: 5px dashed salmon;/*width style color*/
+
+            margin: 50px auto;/*auto centraliza o width*/
+
+            display: block;/*block = box, inline, inline-block */
+        }
+
+        a {/*inline-level*/
+            border: 2px solid red;
+
+            padding: 10px;
+
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA DAS CAIXAS:
+        height = altura
+        width = largura
+        border = bordar
+        padding = espaço dentro do border
+        margin = margem, espaço fora do border
+        outline = por cima (dando a volta) do border, dentro do margin
+
+        TIPOS DE CAIXA:
+        box-level:
+        - faz quebra de linha
+        - largura total da tela (100% de viewport)
+        - quebra de linha no fim tbm
+        EX:
+        - div
+        - h1 - h6
+        - p 
+        - main
+        - header
+        - nav
+        - article
+        - aside
+        - footer
+        - form
+        - video
+
+        inline-level:
+        - continuar na mesma linha
+        - nao ocupa 100%, somente o necessario pra conter o conteudo
+        - no fim continua na msm linha
+        EX:
+        - span (expansao de codigo)
+        - a 
+        - code
+        - small
+        - strong
+        - em 
+        - sup - sub
+        - label
+        - button
+        - input
+        - select 
+    -->
+
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="#" target="_blank" rel="external">links sao de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+
+</body>
+</html>
