@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            /*
+            no iframe css tem peso mais do q inline
+            */
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <p>
+        Acessando o site do 
+        <!--
+            tamanho padrao  300x150px
+        -->
+            <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="auto">
+                <!--
+                    scolling = rolagem do iframe
+                    auto(se tiver mt conteudo, faz rolagem, se nao nao faz)
+                    yes(faz rolagem)
+                    no(nao faz rolagem)
+                -->
+                <a href="https://www.cursoemvideo.com" target="_blank">CursoemVídeo</a>
+            </iframe> 
+        para a programar.
+    </p>
+    <!--
+        ifrmae = consgue colocar urls de fora, mostra um novo site por ex, uma nova instancia
+        frameborder = borda - 0 some - 1 aparece
+    -->
+    <p>
+        O repositório do 
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+                <a href="https://gustavoguanabara.github.io" target="_blank">Github do Gustavo Guanabara</a>
+            </iframe>
+        também é bem legal
+    </p>
+</body>
+</html>
