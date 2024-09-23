@@ -1,17 +1,54 @@
 @charset "UTF-8";
 
-@media screen and () {
-    
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        height: 90vh;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: "esse impressão foi feita pelo mychael";
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone {display: none;}
+    #print {display: block;}
 }
 
-@media screen and () {
-    
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url("../img/back-tablet.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
 }
 
-@media screen and () {
-    
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url("../img/back-pc.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #phone {display: none;}
+    #pc {display: block;}
 }
 
-@media screen and () {
-    
+@media screen and (min-width: 1200px) {
+    body {
+        background: url("../img/back-tv.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #phone {display: none;}
+    #tv {display: block;}
 }
