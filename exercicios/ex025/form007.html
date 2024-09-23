@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomrs</title>
+</head>
+<body>
+    <h1>fomrs</h1>
+
+    <form action="#" method="post" autocomplete="off">
+        <p>
+            <label for="iest">estado: </label>
+            <select name="est" id="iest">
+                <option value="#" selected>escolha seu estado</option>
+                <optgroup label="sudeste">
+                    <option value="sp">sao paulo</option>
+                    <option value="rj">rio de janeiro</option>
+                    <option value="mg">minas gerais</option>
+                    <option value="es">espirito santo</option>
+                </optgroup>
+
+                <optgroup label="sul">
+                    <option value="rs">rio grande do sul</option>
+                    <option value="pr">parana</option>
+                    <option value="st">santa catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ipro">profissão: </label>
+            <select name="pro" id="ipro">
+                <option value="#">escolha sua profissão</option>
+                <optgroup label="escritorio">
+                    <option value="ti">ti</option>
+                    <option value="adm">adm</option>
+                    <option value="eng">engenheiro</option>
+                </optgroup>
+                <optgroup label="outros lugares">
+                    <option value="mot">motorista</option>
+                    <option value="seg">segurança</option>
+                    <option value="lim">limpeza</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">não encontrou? </label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>contador</option>
+                <option>dentista</option>
+                <option>medico</option>
+                <option>eletricista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">mensagens: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="manda ai">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
