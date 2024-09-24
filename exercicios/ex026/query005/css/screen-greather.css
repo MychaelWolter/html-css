@@ -6,10 +6,14 @@
     }
 
     menu {
-        display: flex;
+        display: block;
+    }
+
+    menu > li {
+        display: inline-block;
     }
 
     main {
-        max-width: 800px;
+        max-width: 768px;
     }
 }
